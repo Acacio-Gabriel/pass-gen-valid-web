@@ -1,6 +1,6 @@
 # 🔐 Gerador e Validador de Senhas com SHA‑256
 
-![GitHub license](https://img.shields.io/github/license/seuusuario/password-generator-validator)
+![GitHub license](https://img.shields.io/github/license/Acacio-Gabriel/pass-gen-val)
 
 > Uma ferramenta web simples e educativa para gerar senhas fortes, validar sua segurança e calcular o hash SHA‑256 diretamente no navegador.
 ---
@@ -54,17 +54,6 @@ O projeto está hospedado no GitHub Pages e pode ser acessado diretamente pelo l
 - Diferença entre hash e criptografia – Por que utilizamos hash para armazenar senhas e não criptografia reversível.
 - Essas explicações tornam o projeto não apenas uma ferramenta, mas também um recurso educativo.
 
----
-## 📁 Estrutura do Código
-O projeto consiste em um único arquivo index.html que contém todo o HTML, CSS e JavaScript. A organização interna é:
-
-```plaintext
-index.html
-│   ├── <head> (metadados, estilos CSS)
-│   ├── <body> (interface dividida em seções)
-│   └── <script> (lógica completa: gerador, validador, hash, eventos)
-```
-> Essa abordagem simplifica a publicação e mantém o código auto‑contido.
 ---
 ## 🔮 Melhorias Futuras
 - Adicionar um medidor visual de força da senha (ex: barra de progresso colorida).
