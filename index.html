@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador e Validador de Hash - Criptografia Básica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Gerador e Validador de Hash</h1>
+        <p>Ferramenta educativa para demonstrar regras de senha forte e hash SHA-256</p>
+
+        <!-- Seção do Gerador -->
+         <section>
+            <h2>Gerar Senha</h2>
+            <label>Tamanho: <input type="number" id="length" min="4" value="12"></label><br>
+            <label><input type="checkbox" id="uppercase"> Letras maiúsculas (A-Z)</label><br>
+            <label><input type="checkbox" id="lowercase"> Letras minúsculas (a-z)</label><br>
+            <label><input type="checkbox" id="digits"> Números (0-9)</label><br>
+            <label><input type="checkbox" id="symbols"> Símbolos (!@#$%^&*()-+)</label><br>
+            <button id="gerar">Gerar Senha</button>
+
+            <div>
+                <strong>Senha Gerada:</strong> <span id="senha-gerada"></span>
+                <button id="copiar">Copiar</button>
+            </div>
+         </section>
+         <hr>
+
+        <!-- Seção do Validador -->
+        <section>
+            <h2>Validar Senha</h2>
+            <label>Digite uma senha: <input type="text" id="senha-validar"></label><br>
+            <button id="validar">Validar Senha</button>
+            <div id="resultado-validacao"></div>
+        </section>
+
+        <hr>
+
+        <!-- Seção do Hash SHA-256 -->
+         <section>
+            <h2>Gerar Hash SHA-256</h2>
+            <p>Digite uma senha (ou use a gerada acima) e veja seu hash:</p>
+            <label>Senha para hash: <input type="text" id="senha_hash"></label>
+            <button id="btnHash">Calcular Hash</button>
+            <div>
+                <strong>Hash SHA-256:</strong> <span id="hash_result"></span>
+            </div>
+         </section>
+
+    <hr>
+
+    <!-- Explicação básica de criptografia-->
+     <section class="explicacao">
+        <h2>Noções Básicas de criptografia</h2>
+        <h3>O que é uma senha forte?</h3>
+        <p>Uma senha forte é aquela que possui uma combinação de caracteres maiúsculos, minúsculos, números e símbolos, tornando-a difícil de ser quebrada por métodos automatizados.</p>
+
+        <h3>O que é um hash SHA-256?</h3>
+        <p>SHA-256 é uma função hash criptográfica que transforma qualquer entrada (como uma senha) em uma sequência de 64 caracteres hexadecimais. É uma função de mão única: não é possivel reverter o hash para obter a senha original. Isso é usado para armazenar senhas com segurança: em vez de quardar a senha em texto claro, sistemas armazenam apenas o hash.</p>
+
+        <h3>Por que usar hash e não armazenar senhas em texto claro?</h3>
+        <p>Armazenar senhas em texto claro é extremamente perigoso, pois se os dados forem comprometidos, todas as senhas estarão expostas. Usar hashes garante que, mesmo que os dados sejam acessados, as senhas originais não possam ser obtidas facilmente.</p>
+     </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
