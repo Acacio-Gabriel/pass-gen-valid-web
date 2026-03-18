@@ -1,6 +1,5 @@
 # 🔐 Gerador e Validador de Senhas com SHA‑256
 
-![GitHub license](https://img.shields.io/github/license/Acacio-Gabriel/pass-gen-val)
 
 > Uma ferramenta web simples e educativa para gerar senhas fortes, validar sua segurança e calcular o hash SHA‑256 diretamente no navegador.
 ---
